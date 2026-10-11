@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0a374228d52eb05d8d415bdd74bff567 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0a374228d52eb05d8d415bdd74bff567" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0a374228d52eb05d8d415bdd74bff567 = L.map(
+                "map_0a374228d52eb05d8d415bdd74bff567",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+            L.control.scale().addTo(map_0a374228d52eb05d8d415bdd74bff567);
+
+            
+
+        
+    
+            var tile_layer_b3450e14f507af2f55fe54eb7ba31f80 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 2,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b3450e14f507af2f55fe54eb7ba31f80.addTo(map_0a374228d52eb05d8d415bdd74bff567);
+        
+    
+            var marker_1148a0aeac535d6199efb78738df20a2 = L.marker(
+                [50.4501, 30.5234],
+                {
+}
+            ).addTo(map_0a374228d52eb05d8d415bdd74bff567);
+        
+    
+            var icon_582600ef08b14cef1836cd2558b3f43b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ba70970dae687be68dc8c9cbb9113bb2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02d00a7f74bbed228c05994040800455 = $(`<div id="html_02d00a7f74bbed228c05994040800455" style="width: 100.0%; height: 100.0%;"><strong>Kyiv</strong><br>Ukraine monitoring point</div>`)[0];
+                popup_ba70970dae687be68dc8c9cbb9113bb2.setContent(html_02d00a7f74bbed228c05994040800455);
+            
+        
+
+        marker_1148a0aeac535d6199efb78738df20a2.bindPopup(popup_ba70970dae687be68dc8c9cbb9113bb2)
+        ;
+
+        
+    
+    
+            marker_1148a0aeac535d6199efb78738df20a2.bindTooltip(
+                `<div>
+                     Kyiv
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1148a0aeac535d6199efb78738df20a2.setIcon(icon_582600ef08b14cef1836cd2558b3f43b);
+            
+    
+            var marker_10910150d3f000f7eea6fc25da4c3a50 = L.marker(
+                [25.033, 121.5654],
+                {
+}
+            ).addTo(map_0a374228d52eb05d8d415bdd74bff567);
+        
+    
+            var icon_c25090b002ab4df6456ca117eaa271f3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0a302fbbfa8d58fc081780da9ecdbbef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1828b19d17ce18962dd6c3af786dc331 = $(`<div id="html_1828b19d17ce18962dd6c3af786dc331" style="width: 100.0%; height: 100.0%;"><strong>Taipei</strong><br>Taiwan monitoring point</div>`)[0];
+                popup_0a302fbbfa8d58fc081780da9ecdbbef.setContent(html_1828b19d17ce18962dd6c3af786dc331);
+            
+        
+
+        marker_10910150d3f000f7eea6fc25da4c3a50.bindPopup(popup_0a302fbbfa8d58fc081780da9ecdbbef)
+        ;
+
+        
+    
+    
+            marker_10910150d3f000f7eea6fc25da4c3a50.bindTooltip(
+                `<div>
+                     Taipei
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_10910150d3f000f7eea6fc25da4c3a50.setIcon(icon_c25090b002ab4df6456ca117eaa271f3);
+            
+    
+            var marker_e237831d1076648f285b8996b183ae91 = L.marker(
+                [38.9072, -77.0369],
+                {
+}
+            ).addTo(map_0a374228d52eb05d8d415bdd74bff567);
+        
+    
+            var icon_ecd7f53d9a847c66ab1cda2d8c7c868a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_406a3c95ef07d540b9c25b4692513563 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_735732a68b99363f9efbf3e8da546575 = $(`<div id="html_735732a68b99363f9efbf3e8da546575" style="width: 100.0%; height: 100.0%;"><strong>Washington, D.C.</strong><br>Homeland monitoring point</div>`)[0];
+                popup_406a3c95ef07d540b9c25b4692513563.setContent(html_735732a68b99363f9efbf3e8da546575);
+            
+        
+
+        marker_e237831d1076648f285b8996b183ae91.bindPopup(popup_406a3c95ef07d540b9c25b4692513563)
+        ;
+
+        
+    
+    
+            marker_e237831d1076648f285b8996b183ae91.bindTooltip(
+                `<div>
+                     Washington, D.C.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e237831d1076648f285b8996b183ae91.setIcon(icon_ecd7f53d9a847c66ab1cda2d8c7c868a);
+            
+</script>
+</html>
